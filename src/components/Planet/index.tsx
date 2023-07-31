@@ -39,7 +39,7 @@ const PlanetDetailCard = ({
 }) => {
   return (
     <div className="planet__details__card">
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p>{value}</p>
     </div>
   );
