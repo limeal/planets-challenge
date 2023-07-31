@@ -1,0 +1,196 @@
+.header {
+    position: relative;
+}
+
+.header .header__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .header__content .header__content__title {
+    margin: 0;
+
+    color: #FFF;
+    font-family: "Antonio";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.05px;
+    text-transform: uppercase;
+}
+
+.header .header__content .header__content__desktop {
+    display: none;
+}
+
+.header .header__content .header__content__mobile {
+    display: initial;
+}
+
+.header .header__content .header__content__mobile .header__content__mobile__menu {
+    position: absolute;
+
+    z-index: 10;
+    top: 67px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: #070724;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.header .header__content .header__content__mobile button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.navigation {
+    width: 100%;
+}
+
+.navigation ul {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.navigation ul li {
+    margin: 10px 0;
+}
+
+.navigation ul li button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: #FFF;
+
+    text-align: center;
+    font-family: "Spartan";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 166.667% */
+    letter-spacing: 1.364px;
+    text-transform: uppercase;
+}
+
+.navigation ul li button::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+
+    position: relative;
+    top: 5px;
+}
+
+@media screen and (min-width: 768px) {
+
+    .header .header__content {
+        flex-direction: column;
+    }
+
+    .header .header__content .header__content__desktop {
+        display: initial;
+
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    .navigation ul {
+        flex-direction: row;
+    }
+
+    .navigation ul li {
+        margin: 0;
+    }
+
+    .navigation ul li button {
+
+        text-align: start;
+        font-size: 11px;
+        /* 227.273% */
+        letter-spacing: 1px;
+    }
+
+    .navigation ul li button::before {
+        content: "";
+        width: 0;
+        height: 2px;
+        border-radius: initial;
+        
+        display: block;
+        margin-right: 0;
+
+        position: absolute;
+        top: 0;
+        transition: width 0.3s ease-in-out;
+    }
+
+
+
+    .navigation ul li button:hover::before {
+        width: 50px;
+    }
+
+    .header .header__content .header__content__mobile {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .header .header__content {
+        flex-direction: row;
+    }
+
+    .header .header__content .header__content__desktop {
+        display: initial;
+
+        width: 50%;
+    }
+}
+
+.color-mercury::before {
+    background-color: #419EBB;
+}
+
+.color-venus::before {
+    background-color: #EDA249;
+}
+
+.color-earth::before {
+    background-color: #6f2ed6;
+}
+
+.color-mars::before {
+    background-color: #D14C32;
+}
+
+.color-jupiter::before {
+    background-color: #D83A34;
+}
+
+.color-saturn::before {
+    background-color: #CD5120;
+}
+
+.color-uranus::before {
+    background-color: #1EC2A4;
+}
+
+.color-neptune::before {
+    background-color: #2D68F0;
+}

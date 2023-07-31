@@ -1,0 +1,269 @@
+.planet {
+    display: flex;
+    flex-direction: column;
+
+    margin-top: 50px;
+}
+
+.planet .planet__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    justify-content: center;
+}
+
+.planet .planet__hero .planet__hero__image {
+    position: relative;
+}
+
+.planet .planet__hero .planet__hero__image .planet__hero__geology {
+    position: absolute;
+    object-fit: contain;
+
+    width: 100px;
+    height: 150px;
+    top: 150px;
+    left: 100px;
+}
+
+.planet .planet__hero .planet__hero__image .planet__hero__image__planet {
+    max-width: 300px;
+    max-height: 300px;
+
+    object-fit: cover;
+}
+
+.planet .planet__hero .planet__hero__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.planet .planet__hero .planet__hero__content .planet__hero__content__text {
+    max-width: 375px;
+    text-align: center;
+}
+
+.planet .planet__hero .planet__hero__content .planet__hero__content__text .planet__hero__content__text__source {
+    display: inline-flex;
+    flex-direction: row;
+
+    align-items: center;
+}
+
+.planet .planet__hero .planet__hero__content .planet__hero__content__text .planet__hero__content__text__source .planet__hero__content__text__source__link {
+    margin-left: 5px;
+
+    display: flex;
+    align-items: center;
+}
+
+.planet .planet__hero .planet__hero__content .planet__hero__content__text .planet__hero__content__text__source .planet__hero__content__text__source__link img {
+    margin-left: 5px;
+}
+
+.planet .planet__hero .planet__hero__content h1 {
+    color: #FFF;
+    font-family: 'Antonio';
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+.planet .planet__hero .planet__hero__content p {
+    color: #FFF;
+    font-family: 'Spartan';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+    /* 178.571% */
+}
+
+.planet .planet__hero .planet__hero__content ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.planet .planet__hero .planet__hero__content ul li {
+    margin: 16px 0;
+}
+
+.planet .planet__hero .planet__hero__content .planet__section__link {
+    padding: 12px 28px;
+    cursor: pointer;
+
+    border: none;
+    outline: none;
+    width: 100%;
+    text-align: start;
+}
+
+.planet .planet__hero .planet__hero__content .planet__section__link strong {
+    margin-left: 28px;
+    color: #FFF;
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 208.333% */
+    letter-spacing: 2.571px;
+    text-transform: uppercase;
+}
+
+.planet .planet__hero .planet__hero__content .planet__section__link span {
+    margin-left: 28px;
+
+    color: #FFF;
+    font-family: 'Spartan';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 208.333% */
+    letter-spacing: 2.571px;
+    text-transform: uppercase;
+}
+
+.planet .planet__hero .planet__hero__content p a {
+    opacity: 0.5;
+    color: #FFF;
+    font-family: Spartan;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration-line: underline;
+}
+
+.planet .planet__details ul {
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.planet .planet__details .planet__details__card {
+    margin-top: 40px;
+    border: 1px solid #FFF;
+    padding: 20px 23px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.planet .planet__details .planet__details__card h3 {
+    margin: 0;
+
+    opacity: 0.5;
+    color: #FFF;
+    font-family: 'Spartan';
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 25px;
+    /* 227.273% */
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.planet .planet__details .planet__details__card p {
+    margin: 0;
+    color: #FFF;
+    text-align: right;
+    font-family: 'Antonio';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.75px;
+    text-transform: uppercase;
+}
+
+@media screen and (min-width: 768px) {
+
+    .planet .planet__hero .planet__hero__image .planet__hero__image__planet {
+        min-width: 350px;
+        min-height: 350px;
+    }
+
+    .planet .planet__hero .planet__hero__content .planet__hero__content__text {
+        text-align: left;
+    }
+
+    .planet .planet__hero .planet__hero__content {
+        flex-direction: row;
+    }
+
+    .planet .planet__hero .planet__hero__content ul {
+        margin-left: 30px;
+    }
+
+    .planet .planet__details ul {
+        flex-direction: row;
+    }
+
+    .planet .planet__details .planet__details__card {
+        flex-direction: column;
+        justify-content: initial;
+    }
+
+    .planet .planet__details .planet__details__card p {
+        margin: 0;
+        font-size: 40px;
+        letter-spacing: -1.5px;
+    }
+
+    .planet .planet__hero .planet__hero__image .planet__hero__geology {
+        width: 100px;
+        height: 150px;
+        top: 200px;
+        left: 125px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+
+    .planet {
+        padding: 83px 188px;
+        margin-top: 0px;
+    }
+
+    .planet .planet__hero .planet__hero__image .planet__hero__image__planet {
+        min-width: 600px;
+        min-height: 600px;
+    }
+
+    .planet .planet__hero {
+        flex-direction: row;
+    }
+
+    .planet .planet__hero .planet__hero__content {
+        margin-left: 50px;
+
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: initial;
+    }
+
+    .planet .planet__hero .planet__hero__content ul {
+        margin-left: 0;
+    }
+
+    .planet .planet__hero .planet__hero__image .planet__hero__geology {
+        width: 100px;
+        height: 150px;
+        top: 350px;
+        left: 250px;
+    }
+}
